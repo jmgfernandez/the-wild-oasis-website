@@ -22,6 +22,22 @@ export async function getCabin(id) {
   return data;
 }
 
+// I just created this
+export async function getCabinCapacity(id) {
+  const { data, error } = await supabase
+    .from("cabins")
+    .select("maxCapacity")
+    .eq("id", id)
+    .single();
+
+  if (error) {
+    console.error(error);
+    notFound();
+  }
+
+  return data;
+}
+
 export async function getCabinPrice(id) {
   const { data, error } = await supabase
     .from("cabins")
@@ -168,21 +184,21 @@ export async function createGuest(newGuest) {
   return data;
 }
 
-export async function createBooking(newBooking) {
-  const { data, error } = await supabase
-    .from("bookings")
-    .insert([newBooking])
-    // So that the newly created object gets returned!
-    .select()
-    .single();
+// export async function createBooking(newBooking) {
+//   const { data, error } = await supabase
+//     .from("bookings")
+//     .insert([newBooking])
+//     // So that the newly created object gets returned!
+//     .select()
+//     .single();
 
-  if (error) {
-    console.error(error);
-    throw new Error("Booking could not be created");
-  }
+//   if (error) {
+//     console.error(error);
+//     throw new Error("Booking could not be created");
+//   }
 
-  return data;
-}
+//   return data;
+// }
 
 /////////////
 // UPDATE

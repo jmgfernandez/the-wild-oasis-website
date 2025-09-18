@@ -39,8 +39,8 @@
 }
 
 .rdp-root {
-  --rdp-day-height: 2.25rem !important; /* The height of the day cells. */
-  --rdp-day-width: 2.25rem !important; /* The width of the day cells. */
+  --rdp-day-height: 2rem !important; /* The height of the day cells. */
+  --rdp-day-width: 2rem !important; /* The width of the day cells. */
   --rdp-accent-color: theme("colors.accent.500") !important;
   --rdp-background-color: theme("colors.accent.600") !important;
   --rdp-font-family: inherit !important;
