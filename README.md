@@ -20,5 +20,6 @@ Live Demo [here](https://the-wild-oasis-website-jmgf.vercel.app/).
 
 ## Screenshots
 
-![Wild Oasis Website home page](./public/screenshots/wild-oasis-website-ss-root.png)  
+![Wild Oasis Website home page](./public/screenshots/wild-oasis-website-ss-root.png)
+
 ![Wild Oasis Website reservation page](./public/screenshots/wild-oasis-website-ss-reservecabin.png)
